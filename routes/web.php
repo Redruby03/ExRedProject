@@ -28,3 +28,8 @@ Route::get('/uusseerr/{name}', function ($name) {
 Route::get('/pass/{num1}+{num2}', function ($num1, $num2) {
     return $num1+$num2;
 });
+
+Route::get('/showdetail/{name}/{age}/{sting}', function ($name, $age, $sting) {
+    return "สวัสดี,$name คุณมีอายุ $age ปี และพูดว่า'$sting'";
+});
+
