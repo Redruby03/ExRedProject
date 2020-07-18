@@ -43,3 +43,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/todo', 'TodoController@index');
 Route::get('/todo{id}', 'TodoController@show');
+Route::get('/delete{id}', 'TodoController@delete');
