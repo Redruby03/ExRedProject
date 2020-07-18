@@ -37,6 +37,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/greeting{name}', 'HomeController@greeting');
 // Route::get('/riri/{num1}+{num2}+{num3}','HomeController@cal');
 
-Route::get('/users', 'UserController@index');
-Route::get('/users/show/{id}', 'UserController@show');
-Route::get('/users/update/{idupdate}','UserController@update');
+// Route::get('/users', 'UserController@index');
+// Route::get('/users/show/{id}', 'UserController@show');
+// Route::get('/users/update/{idupdate}','UserController@update');
+
+Route::get('/todo', 'TodoController@index');
+Route::get('/todo{id}', 'TodoController@show');
